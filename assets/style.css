@@ -1,0 +1,66 @@
+#active a {
+    color: green;
+}
+
+#active li:hover {
+    background-color: rgb(206, 66, 66);
+    border-radius: 0.8rem;
+}
+
+#active a:hover {
+    color: white;
+}
+
+.bg-overlay {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../cab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 850px;
+    padding-top: 50px;
+}
+
+#mid {
+    color: white;
+}
+
+#side {
+    width: 45%;
+    background-color: white;
+}
+
+#mid {
+    color: white;
+}
+
+#side {
+    width: 45%;
+    background-color: white;
+    height: 50%;
+}
+
+footer .fa {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mid {
+        color: white;
+    }
+    #side {
+        width: 80%;
+        background-color: white;
+        height: 50%;
+    }
+}
+
+#footer a {
+    color: white;
+}
