@@ -5,7 +5,7 @@ $arrays=array(
                 "distance"=>0
             ),
           array(
-              "location"=>"Indira Nagar",
+              "location"=>"IndiraNagar",
               "distance"=>10
             ),
           array(

@@ -163,6 +163,5 @@ if(isset($_POST["current"])){
                 echo($total);
                }
         } 
-     
     }
 ?>
