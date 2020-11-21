@@ -35,10 +35,10 @@
 }
 
 #side {
-    width: 40%;
+    width: 38%;
     background-color: white;
-    height: 70%;
-    border: 6px solid yellowgreen;
+    height: 65%;
+    border: 6px solid black;
 }
 
 footer .fa {
@@ -56,10 +56,10 @@ footer .fa {
         color: white;
     }
     #side {
-        width: 80%;
+        width: 90%;
         background-color: white;
-        height: 60%;
-        border: 2px solid yellowgreen;
+        height: 65%;
+        border: 2px solid black;
     }
 }
 
@@ -68,5 +68,12 @@ footer .fa {
 }
 
 #book {
-    background-color: yellowgreen;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    margin: 3px !important;
+}
+
+select {
+    -webkit-appearance: none;
 }

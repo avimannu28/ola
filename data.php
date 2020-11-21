@@ -5,27 +5,23 @@ $total=0;
 $cal_current=0;
 $cal_destination=0;
 if(isset($_POST["current"])){
+
     $current=$_POST["current"];
     $destination=$_POST["destination"];
     $cab=$_POST["selected"];
     $luggages=$_POST["luggages"];
-  
-
     foreach($arrays as $key=>$value){
-
         if($value["location"]==$current){
-
             $cal_current= $value["distance"];
         }
         if($value["location"]==$destination){
-
             $cal_destination=$value["distance"];
         }
     }
     $cab_distance=abs($cal_current-$cal_destination);
     $distance=$cab_distance;
       
-    //Luggages
+    //Luggages Validation
     if($luggages<=10 && $luggages>0){
         $total=50;
     }
@@ -74,7 +70,6 @@ if(isset($_POST["current"])){
          //cedmini
         if($cab=="CedMini"){
             $total+=150;
-          
             if($cab_distance>0 && $cab_distance<=10){
                 $total+=$cab_distance*14.50;
                 $cab_distance=$cab_distance-10; 
@@ -86,14 +81,12 @@ if(isset($_POST["current"])){
                 echo($total);
             }
             else if($cab_distance>60&&$cab_distance<=160){
-               
                 $first=$cab_distance-10;
                 $secound=$first-50;
                 $total+=(10*14.50)+(50*13.0)+$secound*11.20;
                 echo($total);
             }
             else{
-               
                 $first=$cab_distance-10;
                 $secound=$first-50;
                 $third=$secound-100;
@@ -101,7 +94,6 @@ if(isset($_POST["current"])){
                 echo($total);
                }
         }
-
         //cedroyal
         if($cab=="CedRoyal"){
             $total+=200;
@@ -116,14 +108,12 @@ if(isset($_POST["current"])){
                 echo($total);
             }
             else if($cab_distance>60&&$cab_distance<=160){
-               
                 $first=$cab_distance-10;
                 $secound=$first-50;
                 $total+=(10*15.50)+(50*14.0)+$secound*12.20;
                 echo($total);
             }
             else{
-               
                 $first=$cab_distance-10;
                 $secound=$first-50;
                 $third=$secound-100;
@@ -131,25 +121,20 @@ if(isset($_POST["current"])){
                 echo($total);
                }
         }
-
       //cedsuv
-
         if($cab=="CedSUV"){
             $total+=250;
             if($cab_distance>0 && $cab_distance<=10){
-
                 $total+=$cab_distance*16.50;
                 $cab_distance=$cab_distance-10; 
                 echo($total);
             }
             else if($cab_distance>10&&$cab_distance<=60){
-
                 $first=$cab_distance-10;
                 $total+=abs(($first*15))+(10*16.50);
                 echo($total);
             }
             else if($cab_distance>60&&$cab_distance<=160){
-               
                 $first=$cab_distance-10;
                 $secound=$first-50;
                 $total+=(10*16.50)+(50*15.0)+$secound*13.20;
@@ -161,7 +146,7 @@ if(isset($_POST["current"])){
                 $third=$secound-100;
                 $total=$total+(10*16.50)+(50*15.0)+(100*13.20)+($third*11.50);
                 echo($total);
-               }
+            }
         } 
     }
 ?>
