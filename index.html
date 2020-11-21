@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <link href='./assests/style.css'>
     <script src="data.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -50,12 +48,12 @@
                 <h4>Choose from range of category and prices</h4>
             </div>
         </div>
-        <div class=" ml-4 pb-4 mt-5" id="side">
+        <div class="ml-4 pb-4" id="side">
             <div class="container">
                 <div class="row">
                     <div class="container">
                         <div class="col col-sm-12 col-12 col-xs-12 mt-4 text-center p-1  py-0" id="book">
-                            <p>CEDCABS</p>
+                            <p class='pt-2'>CEDCABS</p>
                         </div>
                     </div>
                     <div class="col col-sm-12 col-12 col-xs-12 mt-4">
@@ -64,26 +62,26 @@
                                 <label for="exampleFormControlSelect1">Current Location</label>
                                 <select class="form-control" id="current">
                                     <option >SELECT</option>
-                                    <option>Charbagh</option>
-                                  <option>Indira Nagar</option>
-                                  <option>BBD</option>
-                                  <option>Barabanki</option>
-                                  <option>Faizabad</option>
-                                  <option>Basti</option>
-                                  <option>Gorakhpur</option>
+                                    <option value="Charbagh">Charbagh</option>
+                                  <option value="IndiraNagar">IndiraNagar</option>
+                                  <option value="BBD">BBD</option>
+                                  <option value="Barabanki">Barabanki</option>
+                                  <option value="Faizabad">Faizabad</option>
+                                  <option value="Basti">Basti</option>
+                                  <option value="Gorakhpur">Gorakhpur</option>
                                 </select>
                             </div>
                             <div class="form-group col-xs-12">
                                 <label for="exampleFormControlSelect1">Destination Location</label>
                                 <select class="form-control" id="destination">
                                     <option >SELECT</option>
-                                    <option>Charbagh</option>
-                                  <option>Indira Nagar</option>
-                                  <option>BBD</option>
-                                  <option>Barabanki</option>
-                                  <option>Faizabad</option>
-                                  <option>Basti</option>
-                                  <option>Gorakhpur</option>
+                                    <option value="Charbagh">Charbagh</option>
+                                  <option value="IndiraNagar">IndiraNagar</option>
+                                  <option value="BBD">BBD</option>
+                                  <option value="Barabanki">Barabanki</option>
+                                  <option value="Faizabad">Faizabad</option>
+                                  <option value="Basti">Basti</option>
+                                  <option value="Gorakhpur">Gorakhpur</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -100,10 +98,11 @@
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Luggage Weight" id="luggages">
                             </div>
+                            <p id="Price" class="text-center"></p>
                             <input type="submit" class="btn btn-success  pl-4 pr-4 mt-4" value="Book Cab" id="submit">
                         </form>
 
-                        <p id="Price" class="text-center"></p>
+
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
                     <a href="#">CedCabs</a>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 px-0 mx-0">
                 <div class="footer-copyright text-center py-3">Designed By:
                     <a href="#">CedCabs Developer</a>
                 </div>
